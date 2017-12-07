@@ -130,7 +130,7 @@ if(23 === "23") {
 // AND(&&) => true if ALL are true
 // OR(||) => true if ONE is true
 // NOT(!) => inverts true/false value
-
+/*
 const age = 28; // => 'Jack is a little boy.'
 // const age = 28; // => 'Jack is a man'
 // const age = 30; // => Jack is a young man'
@@ -163,3 +163,45 @@ switch(job) {
   default:
     console.log('Jack does something else');
 }
+*/
+
+
+///////////////////////////////////////////////////////////////////
+// CODING CHALLENGE 1
+
+// Jack and a friend invented a simple game where the player with the highest value of his height (In cm) plus five times his age wins.
+
+// 1. Create variables for the heights and ages of two friends and assign them some values
+
+const heightJack = 125;
+const ageJack = 28;
+
+const heightHannah = 125;
+const ageHannah = 28;
+
+const heightMike = 125;
+const ageMike = 37;
+
+// 2. Calculate their scores
+const scoreJack = heightJack + (ageJack + 5);
+const scoreHannah = heightHannah + (ageHannah + 5);
+const scoreMike = heightMike + (ageMike + 5);
+
+console.log(scoreJack);
+console.log(scoreHannah);
+console.log(scoreMike);
+
+// 3. Decide who wins and print the winner to the console. Include the score in the string that you output to the consolde. Don't forget that there can be a draw (both players with the same score).
+
+
+if(scoreJack > scoreHannah) {
+  console.log('Jack wins with a score ' + scoreJack );
+}  else if(scoreJack < scoreHannah ) {
+  console.log('Hannah wins with a score ' + scoreHannah);
+} else if (scoreJack === scoreHannah && scoreJack === scoreMike) {
+  console.log('its a draw');
+} else {
+  console.log('Mike wins with a score of ' + scoreMike);
+}
+
+// 4. EXTRA: Add a third player and now decide who wins. HINT: you will need the && operator to take the decision.
