@@ -79,8 +79,10 @@ console.log(ageJack);
 console.log(ageHannah);
 */
 
+
 ///////////////////////////////////////////////////////////////////
 // LECTURE: IF/ELSE STATEMENTS
+/*
 const name = 'Hannah';
 // const age = 26;
 let isMarried = 'no';
@@ -97,16 +99,21 @@ if (isMarried === 'yes') {
 // BOOLEAN
 isMarried = true;
 
-/*
 if(isMarried) {
   console.log('YES!');
 } else {
   console.log('NO!');
 }
-*/
 
 if(isMarried) {
   console.log('YES!');
+}
+
+// DONT USUALLY USED DOUBLE EQUALS - CREATES BUGS
+// The DOUBLE EWQUALS means the number is equal to the string
+// Theyre the same thing - TYPE COERCION
+if(23 == "23") {
+console.log('Something to print...');
 }
 
 // nothing will print here because of TRIPLE EQUALS
@@ -114,12 +121,45 @@ if(isMarried) {
 if(23 === "23") {
   console.log('Something to print...');
 }
-
-/*
-// DONT USUALLY USED DOUBLE EQUALS - CREATES BUGS
-// The DOUBLE EWQUALS means the number is equal to the string
-// Theyre the same thing - TYPE COERCION
-if(23 == "23") {
-console.log('Something to print...');
-}
 */
+
+
+///////////////////////////////////////////////////////////////////
+// LECTURE: BOOLEAN LOGIC AND SWITCH
+
+// AND(&&) => true if ALL are true
+// OR(||) => true if ONE is true
+// NOT(!) => inverts true/false value
+
+const age = 28; // => 'Jack is a little boy.'
+// const age = 28; // => 'Jack is a man'
+// const age = 30; // => Jack is a young man'
+if(age <= 28) {
+  console.log('Jack is a little boy.');
+}  else if(age >= 28 && age < 30) {
+  console.log('Jack is a young man');
+} else {
+  console.log('Jack is a man.');
+}
+
+
+// SWITCH STATEMENT
+// Is a more elegant way of writing code
+
+let job = 'developer';
+
+job = prompt('What does Jack do?');
+
+switch(job) {
+  case 'developer':
+    console.log('Jack develops code');
+    break;
+  case 'driver':
+    console.log('Jack drives in London');
+    break;
+  case 'cop':
+    console.log('Jack helps fight crime');
+    break;
+  default:
+    console.log('Jack does something else');
+}
