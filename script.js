@@ -1,5 +1,6 @@
 // console.log('hello world');
 
+///////////////////////////////////////////////////////////////////
 // LECTURE: VARIABLES
 /*
 const name = 'John';
@@ -15,8 +16,9 @@ const fullAge = true;
 console.log(fullAge);
 */
 
-/*
+///////////////////////////////////////////////////////////////////
 // LECTURE: VARIABLES 2
+/*
 const name = 'Hannah';
 let age = 27;
 // console.log(name + age); // console => Hannah27
@@ -51,8 +53,9 @@ alert(name + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarr
 
 
 
-
+///////////////////////////////////////////////////////////////////
 // LECTURE: OPERATORS
+/*
 const now = 2017;
 let birthYear = now - 27;
 
@@ -74,3 +77,49 @@ ageHannah *= 2; // same as ageHannah = ageHannah * 2;
 
 console.log(ageJack);
 console.log(ageHannah);
+*/
+
+///////////////////////////////////////////////////////////////////
+// LECTURE: IF/ELSE STATEMENTS
+const name = 'Hannah';
+// const age = 26;
+let isMarried = 'no';
+
+// The Condition:
+// returns a BOOLEAN
+if (isMarried === 'yes') {
+  //if(false then else will be executed)
+  console.log(name + ' is married!');
+} else {
+  console.log(name + ' will hopefully marry soon ...NOT');
+}
+
+// BOOLEAN
+isMarried = true;
+
+/*
+if(isMarried) {
+  console.log('YES!');
+} else {
+  console.log('NO!');
+}
+*/
+
+if(isMarried) {
+  console.log('YES!');
+}
+
+// nothing will print here because of TRIPLE EQUALS
+// it see the numer as a number and the string as a string
+if(23 === "23") {
+  console.log('Something to print...');
+}
+
+/*
+// DONT USUALLY USED DOUBLE EQUALS - CREATES BUGS
+// The DOUBLE EWQUALS means the number is equal to the string
+// Theyre the same thing - TYPE COERCION
+if(23 == "23") {
+console.log('Something to print...');
+}
+*/
