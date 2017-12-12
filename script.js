@@ -165,27 +165,48 @@ switch(job) {
 }
 */
 
-
+/*
 ///////////////////////////////////////////////////////////////////
 // CODING CHALLENGE 1
 
 // Jack and a friend invented a simple game where the player with the highest value of his height (In cm) plus five times his age wins.
 
 // 1. Create variables for the heights and ages of two friends and assign them some values
-
 const heightJack = 125;
-const ageJack = 28;
-
 const heightHannah = 125;
+const ageJack = 28;
 const ageHannah = 28;
-
 const heightMike = 125;
 const ageMike = 37;
 
+// const people = [{
+//   name: 'Hannah',
+//   age: 26,
+//   'height': 125
+// },{
+//   name: 'Jack',
+//   age: 28,
+//   'height': 130
+// }, {
+//   name: 'Beans',
+//   age: 7,
+//   'height': 14
+// }
+// ];
+//
+// people.forEach(person => {
+//   let score = 0;
+//   let name = null;
+//   if((person.age + person.height) > score) {
+//     score = person.age + person.height;
+//     name = person.name;
+//   }
+// });
+
 // 2. Calculate their scores
-const scoreJack = heightJack + (ageJack + 5);
-const scoreHannah = heightHannah + (ageHannah + 5);
-const scoreMike = heightMike + (ageMike + 5);
+const scoreJack = heightJack + 5 + ageJack;
+const scoreHannah = heightHannah + 5 + ageHannah;
+const scoreMike = heightMike + 5 + ageMike;
 
 console.log(scoreJack);
 console.log(scoreHannah);
@@ -193,9 +214,8 @@ console.log(scoreMike);
 
 // 3. Decide who wins and print the winner to the console. Include the score in the string that you output to the consolde. Don't forget that there can be a draw (both players with the same score).
 
-
 if(scoreJack > scoreHannah) {
-  console.log('Jack wins with a score ' + scoreJack );
+  console.log('Jack wins with a score ' + scoreJack + ' points!');
 }  else if(scoreJack < scoreHannah ) {
   console.log('Hannah wins with a score ' + scoreHannah);
 } else if (scoreJack === scoreHannah && scoreJack === scoreMike) {
@@ -205,3 +225,47 @@ if(scoreJack > scoreHannah) {
 }
 
 // 4. EXTRA: Add a third player and now decide who wins. HINT: you will need the && operator to take the decision.
+
+*/
+
+
+///////////////////////////////////////////////////////////////////
+// Lecture: Functions
+
+// calculateAge is the name of the Functions
+// The argument of the function is the 'yearOfBirth'
+function calculateAge(yearOfBirth) {
+  // define a variable
+  var age = 2016 - yearOfBirth;
+  return age;
+}
+
+// to call the function we need to write it out and pass in the informationt hat we want to pass.
+// need to create a variable for it to be stored - in this case it will be ageJohn:
+var ageJohn = calculateAge(1991); // so this will be 2016 - 1990 and then it will give you the age of ageJohn
+var ageMike = calculateAge(1969);
+var ageJack = calculateAge(1989);
+var ageHannah = calculateAge(1990);
+console.log('John is ' + ageJohn + ' years old ');
+console.log('Mike is ' + ageMike + ' years old ');
+console.log('Jack is ' + ageJack + ' years old ');
+console.log('Hannah is ' + ageHannah + ' years old ');
+
+
+// Calculate how many years someone has left until retirement:
+function yearsUntilRetirement(name, year) {
+  var age = calculateAge(year);
+  // console.log(age);
+  var retirement = 65 - age;
+
+  if(retirement >= 0) {
+    console.log(name + ' retires in ' + retirement + ' years ');
+  } else {
+    console.log(name + ' is already retired!');
+  }
+}
+// here we have two parameters passed into the argument:
+yearsUntilRetirement('John', 1950);
+yearsUntilRetirement('Hannah', 1990);
+yearsUntilRetirement('Jack', 1989);
+yearsUntilRetirement('Mike', 1969);
