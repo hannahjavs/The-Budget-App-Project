@@ -228,7 +228,7 @@ if(scoreJack > scoreHannah) {
 
 */
 
-
+/*
 ///////////////////////////////////////////////////////////////////
 // Lecture: Functions
 
@@ -269,3 +269,25 @@ yearsUntilRetirement('John', 1950);
 yearsUntilRetirement('Hannah', 1990);
 yearsUntilRetirement('Jack', 1989);
 yearsUntilRetirement('Mike', 1969);
+*/
+
+///////////////////////////////////////////////////////////////////
+// Lecture: Statements and Expressions
+
+// Functions
+function someFun(par) {
+  //code
+}
+
+var someFun = function(par){
+  //code
+}
+
+//Expressions - Produce an outcome for the variable
+3 + 4;
+var x = 3;
+
+// Statements = Performs an action but does not give an immediate value/variable that will be stored
+if (x === 5) {
+  //do something
+}
