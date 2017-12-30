@@ -342,3 +342,40 @@ if (john.indexOf('teacher') === -1) {
   console.log('John is NOT a teacher.');
 }
 */
+
+/*
+///////////////////////////////////////////////////////////////////
+// Lecture: Objects
+
+// Object literal - we have the KEY and then the VALUE:
+var hannah = {
+  name: 'Hannah',
+  lastName: 'Jadavji',
+  yearOfBirth: 1990,
+  job: 'Developer',
+  isMarried: false
+};
+console.log(hannah); // Displays the whole object
+
+// Retrieve an element from this object:
+// get the last name:
+console.log(hannah.lastName); // => Jadavji
+
+var xyz = 'job';
+console.log(hannah[xyz]); // => Developer
+
+// This will now overwrite the object above:
+hannah.lastName = 'Dewson';
+hannah['job'] = 'Actor';
+console.log(hannah);
+
+
+// Different way of creating an object:
+var jane = new Object();
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1960;
+jane['job'] = 'retired';
+jane['isMarried'] = true;
+console.log(jane);
+*/
