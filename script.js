@@ -438,3 +438,82 @@ var mike = {
 mike.calculateAge();
 console.log(mike);
 */
+
+
+///////////////////////////////////////////////////////////////////
+// Lecture: Loops And Iterations
+// Got for creating a repetitive task
+
+// THE FOR LOOP - This loop will show 0, 1, 2, 3, 4, 5, 6, 7, 8, 9:
+
+// i++ means i=i+1
+// The for loops mean, if i is less than 10 then show all of i which is, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9:
+// for (var i = 0; i < 10; i++) {
+// console.log(i);
+// }
+
+
+// 0, true, print 0, update i to 1
+// 1, true, print 1, update i to 2
+// 2, true, print 2, update i to 3
+// .
+// .
+// .
+// .
+// 7, true, print 7, update i to 8
+// .
+// .
+// .
+// 10, FALSE, LOOP ENDS!
+
+
+// We need to print all of these names in the console:
+// var familyNames = ['Hannah', 'Josh', 'Janet', 'Alex'];
+
+// When i is 5 stop the loop
+// for (var i = 0; i < 5; i++) {
+//   console.log(names[i]);
+// }
+
+// for (var i = 0; i < familyNames.length; i++) {
+//   console.log(familyNames[i]);
+// }
+
+// i-- means i = i -1
+// the condition is that i should be greater than or equal to 0:
+// for (var i = familyNames.length - 1; i >= 0; i--) {
+//   console.log(familyNames[i]);
+// }
+
+
+
+// THE WHILE LOOP
+// Has the condition evaluated before each iteration
+
+// var familyNames = ['Hannah', 'Josh', 'Janet', 'Alex'];
+
+// print out the 5 elements of the array in order:
+// var i= 0; // the COUNTER variables
+// while(i < familyNames.length) {
+//   console.log(familyNames[i]);
+//   i++; //update the COUNTER VARIABLE
+// }
+
+// BREAK LOOP (is to break out of the loop)
+// for (var i = 1; i <=5; i++) {
+//   console.log(i);
+//
+//   // stop the loop after three numbers:
+//   if (i === 3) {
+//     break; // this will break the loop
+//   }
+// }
+
+// THIS WILL NOT SHOW THE NUMBER 3:
+// CONTINUES (continue is to continue the loop over and over again)
+// for (var i = 1; i <= 5; i++) {
+//   if (i === 3) {
+//     continue; // this will continue the loop
+//   }
+//   console.log(i);
+// }
