@@ -379,3 +379,62 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 console.log(jane);
 */
+
+/*
+///////////////////////////////////////////////////////////////////
+// Lecture: Objects & Methods
+// Functions associated to Objects
+
+// VERSION ONE:
+var hannah = {
+  name: 'Hannah',
+  lastName: 'Jadavji',
+  yearOfBirth: 1990,
+  job: 'Developer',
+  isMarried: false,
+  family: ['Josh', 'Janet', 'Alex'],
+
+  // Below, THIS means the object HANNAH:
+  calculateAge: function() {
+    return 2016 - this.yearOfBirth;
+  }
+};
+// console.log(hannah.calculateAge(1970));
+console.log(hannah.calculateAge());
+
+// if we want to add this function into the object do:
+var age = hannah.calculateAge();
+hannah.age = age;
+console.log(hannah);
+
+
+// VERSION TWO:
+var hannah = {
+  name: 'Hannah',
+  lastName: 'Jadavji',
+  yearOfBirth: 1990,
+  job: 'Developer',
+  isMarried: false,
+  family: ['Josh', 'Janet', 'Alex'],
+
+  // Below, THIS means the object HANNAH:
+  calculateAge: function() {
+    this.age = 2016 - this.yearOfBirth;
+  }
+};
+hannah.calculateAge();
+console.log(hannah);
+
+
+
+var mike = {
+  yearOfBirth: 1950,
+  // Below, THIS means the object MIKE:
+  calculateAge: function() {
+    this.age = 2016 - this.yearOfBirth;
+  }
+};
+// Build the function:
+mike.calculateAge();
+console.log(mike);
+*/
