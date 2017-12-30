@@ -271,6 +271,7 @@ yearsUntilRetirement('Jack', 1989);
 yearsUntilRetirement('Mike', 1969);
 */
 
+/*
 ///////////////////////////////////////////////////////////////////
 // Lecture: Statements and Expressions
 
@@ -291,3 +292,53 @@ var x = 3;
 if (x === 5) {
   //do something
 }
+*/
+
+/*
+///////////////////////////////////////////////////////////////////
+// Lecture: Arrays
+
+// Bundling all variables into one single variables
+const names = ['John', 'Jane', 'Mark'];
+
+const years = new Array(1990, 1960, 1948);
+
+console.log(names[0]); // this will give us John in the console
+console.log(names[1]); // this will give us Jane in the console
+console.log(names[2]); // this will give us Mark in the console
+
+// this will mutate the element 1 in the array to Beans
+// it will overwrite.
+names[1] = 'Ben';
+console.log(names);
+*/
+
+/*
+// Below the object has properties which are strings, a number and a boolean
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+// Add an element to the end of the array John's favourite colour:
+john.push('blue');
+console.log(john);
+
+// Add an element at the beginning of the array:
+john.unshift('Mr. ') ;
+
+// This will remove the last element from the array - in this case it is blue:
+john.pop();
+
+// This will remoe the first element in the array:
+john.shift();
+
+console.log(john);
+
+// Return the position of the element in the array that you pass in:
+// we have to store it in a variable to display it or do an ALERT:
+// alert(john.indexOf('Smith'));
+
+// Find out if John is a teacher (so teacher is in the array),
+// It will display that he is not because it says he is a 'designer' in the array.
+if (john.indexOf('teacher') === -1) {
+  console.log('John is NOT a teacher.');
+}
+*/
