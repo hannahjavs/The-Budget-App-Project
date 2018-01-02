@@ -517,3 +517,36 @@ console.log(mike);
 //   }
 //   console.log(i);
 // }
+
+
+/*
+///////////////////////////////////////////////////////////////////
+// CODING CHALLENGE 2
+// Creat an empty array (just []) of ages of the people:
+function printFullAge(years) {
+  var fullAges = [];
+  var ages = [];
+
+  // Use a loop to fill the array with the ages of the persons:
+  for (var i = 0; i < years.length; i++) {
+    // 2016 minus the years that the person was born:
+    ages[i] = 2016 - years[i];
+  }
+
+  // Log if the person has a full age or not:
+  for (i = 0; i < ages.length; i++) {
+    if(ages[i] >= 18) {
+      console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is of full age.');
+      fullAges.push(true); // Boolean value
+    } else {
+      console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is NOT of full age.');
+      fullAges.push(false); // Boolean value
+    }
+  }
+  return fullAges;
+}
+var years = [1999, 1990, 2000, 1993, 2001]; // An array with some years where persons were born:
+
+var full_1 = printFullAge(years);
+var full_2 = printFullAge([2012, 1915, 1990]);
+*/
